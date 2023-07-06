@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" defer src="script.js"></script>
+    <title>Otter Clicker</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="left">
+        <section class="otterCounter">
+          <p class="counterObject">
+            Money:
+            <span id="otterNum">0</span>
+          </p>
+        </section>
+        <section class="otterRate">
+          <span id="rateNum">0</span>
+          <p class="counterRate">meals/second</p>
+        </section>
+        <section id="character">
+          <div class="bubble">I'm hungry...</div>
+          <img
+            class="otter"
+            src="images/output-onlinepngtools.png"
+            alt="otter-pic"
+          />
+        </section>
+      </div>
+      <div class="right">
+        <h2 id="title">Diet Selection</h2>
+        <div class="hidden">
+          <section class="diet-choice">
+            <h3 class="diet">
+              Clam
+              <button class="button" id="clamButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="clamQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">1</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="clamCost">15</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Snail
+              <button class="button" id="snailButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="snailQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">2</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="snailCost">30</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Sea urchin
+              <button class="button" id="urchinButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="urchinQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">5</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="urchinCost">75</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Crab
+              <button class="button" id="crabButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="crabQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">15</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="crabCost">225</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Shrimp
+              <button class="button" id="shrimpButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="shrimpQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">50</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="shrimpCost">750</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Abalone
+              <button class="button" id="abaloneButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="abaloneQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">155</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="abalonCost">2325</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Fish
+              <button class="button" id="fishButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="fishQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">375</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="fishCost">5625</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Sea star
+              <button class="button" id="starButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="starQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">650</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="starCost">9750</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Eel
+              <button class="button" id="eelButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="eelQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">1250</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="eelCost">18750</span>
+              </article>
+            </div>
+          </section>
+          <section class="diet-choice">
+            <h3 class="diet">
+              Octopus
+              <button class="button" id="octopusButton">Give</button>
+            </h3>
+            <div class="item">
+              <article class="stock">
+                quantity:
+                <span class="quantityNum" id="octopusQuantity">0</span>
+              </article>
+              <article class="rate">
+                meals/second:
+                <span class="buyRate">3000</span>
+              </article>
+              <article class="price">
+                cost:
+                <span class="cost" id="octopusCost">45000</span>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
